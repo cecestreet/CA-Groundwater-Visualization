@@ -11,6 +11,8 @@ https://data.cnra.ca.gov/dataset/dd9b15f5-6d08-4d8c-bace-37dc761a9c08/resource/a
 
 
 Future considerations: 
+
 -Creating a SQL Database from the Measurements and Station databases and using this as the data source.
+
 -Integrating the California Natural Resources API as the data source.
 https://docs.ckan.org/en/latest/maintaining/datastore.html
