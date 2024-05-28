@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>California Groundwater Maps</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #plotly-map, #leaflet-map {
+            width: 90%;
+            height: 60vh;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<div>
+    <!--inline JavaScript used for the dropdown, updateMaps function is triggered triggered by onchange event handler---> 
+    <select id="year-dropdown" onchange="updateMaps(this.value)">
+            <!--Year options populated---> 
+        {% for year in years %}
+            <option value="{{ year }}">{{ year }}</option>
+        {% endfor %}
+    </select>
+</div>
+
+<div id="plotly-map"></div>
+<div id="leaflet-map"></div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.heat/dist/leaflet-heat.js"></script>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script src="https://d3js.org/d3.v6.min.js"></script>
+<script src="{{ url_for('static', filename='JavaScript.js') }}"></script>
+
+</body>
+</html>
