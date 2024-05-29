@@ -8,10 +8,9 @@ Measurements - Groundwater level time series measurements
 Station - Groundwater well location information
 https://data.cnra.ca.gov/dataset/dd9b15f5-6d08-4d8c-bace-37dc761a9c08/resource/af157380-fb42-4abf-b72a-6f9f98868077/download/stations.csv
 
-Screenrecording of the Visualizations when Resources folder with cleaned CSV, or API hookup, is present: https://youtu.be/KQFxkT1aHGI
+#Screen Recording of the Visualizations when Resources folder with cleaned CSV, or API hookup, is present: https://youtu.be/KQFxkT1aHGI
 
-Future considerations: 
-
+#Future considerations: 
 -Creating a SQL Database from the Measurements and Station databases and using this as the data source.
 
 -Integrating the California Natural Resources API as the data source.
