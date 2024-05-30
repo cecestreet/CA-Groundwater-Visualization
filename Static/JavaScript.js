@@ -152,7 +152,7 @@ legend.onAdd = function (map) {
     var div = L.DomUtil.create('div', 'legend');
     div.style.backgroundColor = 'white'; 
     div.innerHTML += '<h4>Groundwater Sample Quality</h4>';
-    div.innerHTML += '<p><span style="color: green;">Green</span></p>';
+    div.innerHTML += '<p><span style="color: green;">Good</span></p>';
     div.innerHTML += '<p><span style="color: red;">Questionable</span></p>';
     div.innerHTML += '<p><span style="color: grey;">Provisional</span></p>';
     return div;
